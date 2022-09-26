@@ -1,2 +1,1 @@
-# json-screen-reader
-A screen reader mode for json object
+# Interactive Screen Reader Interface for JSON
