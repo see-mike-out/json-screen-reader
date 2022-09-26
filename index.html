@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="author" content="Hyeok Kim" />
+  <meta name="title" content="Interactive JSON Screen Reader" />
+  <link href="main.css" rel="stylesheet" />
+  <title>Interactive JSON Screen Reader</title>
+</head>
+
+<body>
+  <header>
+    <h1>Interactive JSON Screen Reader</h1>
+    <button id="render">Render</button>
+  </header>
+  <main>
+    <section>
+      <h2>Source JSON</h2>
+      <textarea id="input" class="input-general"></textarea>
+    </section>
+    <section>
+      <h2>Interactive Reader</h2>
+      <div id="output" class="input-general"></div>
+    </section>
+  </main>
+  <footer>
+    <div>&copy; Hyeok Kim</div>
+    <div>Visit <a href="https://github.com/see-mike-out/json-screen-reader">GitHub</a></div>
+  </footer>
+  <script src="src/jsr.js"></script>
+</body>
+
+</html>

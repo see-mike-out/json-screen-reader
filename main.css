@@ -1,0 +1,272 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.input-general {
+  border: 1px solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+
+header button {
+  appearance: none;
+  border-radius: 0.5rem;
+  border: 0;
+}
+
+h1 {
+  font-weight: 600;
+  margin: 0;
+  line-height: 100%;
+}
+
+h2 {
+  font-weight: 500;
+  margin: 0;
+  line-height: 100%;
+}
+
+footer {
+  display: flex;
+  border-top: 1px solid;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1200px) {
+
+  /* large desktop */
+  header,
+  main,
+  footer {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  h1 {
+    padding: 1rem 0.5rem;
+    font-size: 1.3rem;
+  }
+
+  header button {
+    margin: 0.5rem 0.5rem;
+    line-height: 100%;
+    font-size: 1rem;
+  }
+
+  h2 {
+    padding: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  main section {
+    width: 50%;
+    padding: 1rem 0.5rem;
+  }
+
+  #input,
+  #output {
+    width: 100%;
+    height: calc(100vh - 9.4rem - 2px)
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+  /* medium desktop */
+  header,
+  main,
+  footer {
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+  }
+
+  h1 {
+    padding: 1rem 0.5rem;
+    font-size: 1.2rem;
+  }
+
+
+  header button {
+    margin: 0.5rem 0.5rem;
+    line-height: 100%;
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    padding: 0 0 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  main section {
+    width: 50%;
+    padding: 1rem 0.5rem;
+  }
+
+  #input,
+  #output {
+    width: 100%;
+    height: calc(100vh - 9.2rem - 2px)
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  /* medium desktop */
+  header,
+  main,
+  footer {
+    width: 100%;
+    margin: 0;
+  }
+
+  h1 {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  header button {
+    margin: 0.25rem 0.5rem;
+    line-height: 100%;
+    font-size: 0.85rem;
+  }
+
+  h2 {
+    padding: 0 0 0.25rem 0;
+    font-size: 0.95rem;
+  }
+
+  main {
+    display: block;
+  }
+
+  main section {
+    width: 100%;
+    padding: 0.75rem 0.5rem;
+  }
+  main section:nth-child(2) {
+    margin-top: -1rem;
+  }
+
+  #input,
+  #output {
+    width: 100%;
+    min-height: 200px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    background-color: #ffffff;
+  }
+
+  header,
+  footer,
+  .input-general {
+    border-color: #dddddd;
+  }
+
+  .input-general {
+    background-color: #ffffff;
+    color: #121212;
+  }
+
+  .input-general:focus {
+    background-color: #ECEFF1;
+  }
+
+  h1 {
+    color: black;
+  }
+
+  h2 {
+    color: #333333;
+  }
+
+  footer {
+    color: #999999;
+  }
+
+  header button {
+    background-color: #2962FF;
+    color: #ffffff;
+  }
+
+  a,
+  a:visited {
+    color: #00897B;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #263238;
+  }
+
+  header,
+  footer,
+  .input-general {
+    border-color: #546E7A;
+  }
+
+  .input-general {
+    background-color: #263238;
+    color: #ffffff;
+  }
+
+  .input-general:focus {
+    background-color: #37474F;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  h2 {
+    color: #ECEFF1;
+  }
+
+  footer {
+    color: #90A4AE;
+  }
+
+
+  header button {
+    background-color: #2962FF;
+    color: #E3F2FD;
+  }
+
+  a,
+  a:visited {
+    color: #64FFDA;
+  }
+}
