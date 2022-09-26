@@ -11,7 +11,10 @@
 <body>
   <header>
     <h1>Interactive JSON Screen Reader</h1>
-    <button id="render">Render</button>
+    <div>
+      <button id="info">Info</button>
+      <button id="render">Render</button>
+    </div>
   </header>
   <main>
     <section>
@@ -25,9 +28,33 @@
     </section>
   </main>
   <footer>
-    <div>&copy; Hyeok Kim</div>
-    <div>Visit <a href="https://github.com/see-mike-out/json-screen-reader">GitHub</a></div>
+    <div>&copy; <a href="http://hyeok.me" target="_blank">Hyeok Kim</a></div>
+    <div>Visit <a href="https://github.com/see-mike-out/json-screen-reader" target="_blank">GitHub</a></div>
   </footer>
+  <modal id="info-text" style="display: none;">
+    <dialogue>
+      <h2>About this project</h2>
+      <p>
+        This project is at a preliminary stage.
+        Please feel free to report an issue about bug or improvement at the GitHub Issue page for this project (<a
+          href="https://github.com/see-mike-out/json-screen-reader/issues" target="_blank">link</a>).
+      </p>
+      <p>
+        To simulate screen reader on Chrome, install Screen Reader extension by Chrome
+        (<a href="https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn"
+          target="_blank">link</a>).
+      </p>
+      <p>
+        The sample JSON object is obtained from Twitter API documentation at Sept 26, 2022
+        (<a
+          href="https://developer.twitter.com/en/docs/twitter-api/v1/tweets/timelines/api-reference/get-statuses-home_timeline"
+          target="_blank">link</a>).
+      </p>
+      <div style="text-align: right">
+        <button id="info-close">Close</button>
+      </div>
+    </dialogue>
+  </modal>
   <script src="src/jsr.js"></script>
 </body>
 
